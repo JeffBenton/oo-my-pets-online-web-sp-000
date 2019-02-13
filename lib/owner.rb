@@ -54,7 +54,12 @@ class Owner
   
   def sell_pets
     @pets.each do |type|
-      puts type
+      type.each { |pet| pet.mood = "nervous" }
     end
+    @pets = {
+      :fishes => [],
+      :dogs => [],
+      :cats => []
+    }
   end
 end
