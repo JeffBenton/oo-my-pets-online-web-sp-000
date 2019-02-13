@@ -54,7 +54,7 @@ class Owner
   
   def sell_pets
     @pets.each_value do |type|
-      type.each { |pet| puts pet }
+      type.each { |pet| pet.mood = "nervous" }
     end
     @pets = {
       :fishes => [],
