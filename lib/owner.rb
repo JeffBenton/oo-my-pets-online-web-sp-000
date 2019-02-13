@@ -56,10 +56,5 @@ class Owner
     @pets.each_value do |type|
       type.each { |pet| pet.mood = "nervous" }
     end
-    @pets = {
-      :fishes => [],
-      :dogs => [],
-      :cats => []
-    }
   end
 end
